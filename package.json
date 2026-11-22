@@ -1,0 +1,33 @@
+{
+  "name": "jingxiaobao-memory-design",
+  "version": "0.1.0",
+  "description": "Local-first long-term memory reference implementation: fact card, event stream, candidate pool, question routing and memory graph, extracted from Aurabot 1.1.6.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "src/features/memory.js",
+  "exports": {
+    ".": "./src/features/memory.js",
+    "./card": "./src/features/memory/card.js",
+    "./events": "./src/features/memory/events.js",
+    "./recent": "./src/features/memory/recent.js",
+    "./route": "./src/features/memory/route.js",
+    "./graph": "./src/features/memory/graph.js",
+    "./identity": "./src/features/memory/identity.js",
+    "./config": "./src/core/config.js"
+  },
+  "scripts": {
+    "test": "node --test --test-concurrency=1 \"test/*.test.js\"",
+    "demo": "node examples/demo.mjs"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "keywords": [
+    "ai-memory",
+    "long-term-memory",
+    "bm25",
+    "local-first",
+    "memory-graph"
+  ]
+}
